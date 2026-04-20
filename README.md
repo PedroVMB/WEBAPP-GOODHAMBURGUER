@@ -1,4 +1,4 @@
-# Good Hamburger 🍔
+# Good Hamburger 
 
 Sistema de pedidos para a lanchonete **Good Hamburger**, construído com .NET 10, ASP.NET Core, Blazor Server e EF Core InMemory.
 
