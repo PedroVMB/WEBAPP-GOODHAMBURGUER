@@ -1,0 +1,118 @@
+@page "/menu"
+@using GoodHamburguer.Application.DTOs
+@using GoodHamburguer.Web.Services
+@inject IOrderApiService ApiService
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
+
+<PageTitle>Cardápio — Good Hamburger</PageTitle>
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="mb-0">🗒️ Cardápio</h1>
+    <a href="/orders" class="btn btn-success">Fazer Pedido</a>
+</div>
+
+@if (_loading)
+{
+    <div class="text-center py-5">
+        <div class="spinner-border text-warning" role="status"></div>
+        <p class="mt-2 text-muted">Carregando cardápio...</p>
+    </div>
+}
+else if (_connectionError)
+{
+    <div class="alert alert-danger">
+        <strong>Não foi possível conectar à API.</strong> Verifique se a API está em execução em <code>@_apiUrl</code>.
+        <br/>
+        <button class="btn btn-sm btn-outline-danger mt-2" @onclick="Reload">Tentar novamente</button>
+    </div>
+}
+else
+{
+    <h4 class="mb-3 text-secondary">🥪 Sanduíches</h4>
+    <div class="row g-3 mb-5">
+        @foreach (var item in _sandwiches)
+        {
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center py-4">
+                        <div style="font-size:2.5rem">🍔</div>
+                        <h5 class="card-title mt-2 mb-1">@item.Name</h5>
+                        <span class="badge bg-warning text-dark fs-6">R$ @item.Price.ToString("F2")</span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <h4 class="mb-3 text-secondary">🍟 Acompanhamentos</h4>
+    <div class="row g-3 mb-5">
+        @foreach (var item in _sides)
+        {
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body text-center py-4">
+                        <div style="font-size:2.5rem">@(item.Name.Contains("Batata") ? "🍟" : "🥤")</div>
+                        <h5 class="card-title mt-2 mb-1">@item.Name</h5>
+                        <span class="badge bg-warning text-dark fs-6">R$ @item.Price.ToString("F2")</span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <div class="card border-info shadow-sm">
+        <div class="card-header bg-info text-white fw-bold">🏷️ Regras de Desconto</div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Sanduíche + Batata + Refrigerante
+                <span class="badge bg-success fs-6">20% OFF</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Sanduíche + Refrigerante
+                <span class="badge bg-primary fs-6">15% OFF</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Sanduíche + Batata
+                <span class="badge bg-secondary fs-6">10% OFF</span>
+            </li>
+        </ul>
+    </div>
+}
+
+@code {
+    private bool _loading = true;
+    private bool _connectionError = false;
+    private string _apiUrl = "http://localhost:5066";
+    private IEnumerable<MenuItemResponse> _sandwiches = [];
+    private IEnumerable<MenuItemResponse> _sides = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task Reload()
+    {
+        _connectionError = false;
+        _loading = true;
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        try
+        {
+            var items = (await ApiService.GetMenuAsync()).ToList();
+            _sandwiches = items.Where(i => i.Category == "Sandwich");
+            _sides = items.Where(i => i.Category == "Side");
+        }
+        catch (HttpRequestException)
+        {
+            _connectionError = true;
+        }
+        finally
+        {
+            _loading = false;
+        }
+    }
+}

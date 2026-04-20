@@ -1,0 +1,16 @@
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/bin/Debug/net10.0/GoodHamburguer.Infrastructure.deps.json
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/bin/Debug/net10.0/GoodHamburguer.Infrastructure.dll
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/bin/Debug/net10.0/GoodHamburguer.Infrastructure.pdb
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/bin/Debug/net10.0/GoodHamburguer.Model.dll
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/bin/Debug/net10.0/GoodHamburguer.Model.pdb
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/obj/Debug/net10.0/GoodHamburguer.Infrastructure.csproj.AssemblyReference.cache
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/obj/Debug/net10.0/GoodHamburguer.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/obj/Debug/net10.0/GoodHamburguer.Infrastructure.AssemblyInfoInputs.cache
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/obj/Debug/net10.0/GoodHamburguer.Infrastructure.AssemblyInfo.cs
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/obj/Debug/net10.0/GoodHamburguer.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/obj/Debug/net10.0/GoodHamburguer.Infrastructure.sourcelink.json
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/obj/Debug/net10.0/GoodHamb.F039CCAE.Up2Date
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/obj/Debug/net10.0/GoodHamburguer.Infrastructure.dll
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/obj/Debug/net10.0/refint/GoodHamburguer.Infrastructure.dll
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/obj/Debug/net10.0/GoodHamburguer.Infrastructure.pdb
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Infrastructure/obj/Debug/net10.0/ref/GoodHamburguer.Infrastructure.dll

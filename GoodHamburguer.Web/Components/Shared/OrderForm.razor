@@ -1,0 +1,55 @@
+@using GoodHamburguer.Application.DTOs
+@using GoodHamburguer.Model.Enums
+
+<EditForm Model="Model" OnValidSubmit="HandleSubmit">
+    <div class="mb-3">
+        <label class="form-label">Sanduíche <span class="text-danger">*</span></label>
+        <InputSelect @bind-Value="Model.Sandwich" class="form-select">
+            <option value="">-- Selecione --</option>
+            <option value="@SandwichType.XBurger">X-Burger — R$ 5,00</option>
+            <option value="@SandwichType.XEgg">X-Egg — R$ 4,50</option>
+            <option value="@SandwichType.XBacon">X-Bacon — R$ 7,00</option>
+        </InputSelect>
+    </div>
+
+    <div class="mb-3 form-check">
+        <InputCheckbox @bind-Value="Model.IncludeFries" class="form-check-input" id="fries" />
+        <label class="form-check-label" for="fries">Batata Frita — R$ 2,00</label>
+    </div>
+
+    <div class="mb-3 form-check">
+        <InputCheckbox @bind-Value="Model.IncludeSoda" class="form-check-input" id="soda" />
+        <label class="form-check-label" for="soda">Refrigerante — R$ 2,50</label>
+    </div>
+
+    @if (Errors is not null && Errors.Any())
+    {
+        <div class="alert alert-danger">
+            <ul class="mb-0">
+                @foreach (var err in Errors)
+                {
+                    <li>@err</li>
+                }
+            </ul>
+        </div>
+    }
+
+    <button type="submit" class="btn btn-primary">@SubmitLabel</button>
+    @if (OnCancel.HasDelegate)
+    {
+        <button type="button" class="btn btn-secondary ms-2" @onclick="OnCancel">Cancelar</button>
+    }
+</EditForm>
+
+@code {
+    [Parameter] public CreateOrderRequest Model { get; set; } = new();
+    [Parameter] public EventCallback OnSubmit { get; set; }
+    [Parameter] public EventCallback OnCancel { get; set; }
+    [Parameter] public IEnumerable<string>? Errors { get; set; }
+    [Parameter] public string SubmitLabel { get; set; } = "Salvar";
+
+    private async Task HandleSubmit()
+    {
+        await OnSubmit.InvokeAsync();
+    }
+}

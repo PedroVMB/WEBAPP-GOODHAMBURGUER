@@ -1,0 +1,159 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "GoodHamburguer.Web/1.0.0": {
+        "dependencies": {
+          "GoodHamburguer.Application": "1.0.0",
+          "Refit.HttpClientFactory": "10.1.6"
+        },
+        "runtime": {
+          "GoodHamburguer.Web.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore/9.0.4": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "9.0.4"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.dll": {
+            "assemblyVersion": "9.0.4.0",
+            "fileVersion": "9.0.425.16310"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Abstractions/9.0.4": {
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {
+            "assemblyVersion": "9.0.4.0",
+            "fileVersion": "9.0.425.16310"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.InMemory/9.0.4": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "9.0.4"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "9.0.4.0",
+            "fileVersion": "9.0.425.16310"
+          }
+        }
+      },
+      "Refit/10.1.6": {
+        "runtime": {
+          "lib/net10.0/Refit.dll": {
+            "assemblyVersion": "10.1.0.0",
+            "fileVersion": "10.1.6.54201"
+          }
+        }
+      },
+      "Refit.HttpClientFactory/10.1.6": {
+        "dependencies": {
+          "Refit": "10.1.6"
+        },
+        "runtime": {
+          "lib/net10.0/Refit.HttpClientFactory.dll": {
+            "assemblyVersion": "10.1.0.0",
+            "fileVersion": "10.1.6.54201"
+          }
+        }
+      },
+      "GoodHamburguer.Application/1.0.0": {
+        "dependencies": {
+          "GoodHamburguer.Infrastructure": "1.0.0",
+          "GoodHamburguer.Model": "1.0.0"
+        },
+        "runtime": {
+          "GoodHamburguer.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "GoodHamburguer.Infrastructure/1.0.0": {
+        "dependencies": {
+          "GoodHamburguer.Model": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "9.0.4",
+          "Microsoft.EntityFrameworkCore.InMemory": "9.0.4"
+        },
+        "runtime": {
+          "GoodHamburguer.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "GoodHamburguer.Model/1.0.0": {
+        "runtime": {
+          "GoodHamburguer.Model.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GoodHamburguer.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.EntityFrameworkCore/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+5IAX0aicQYCRfN4pAjad+JPwdEYoVEM3Z1Cl8/EiEv3FVHQHdd8TJQpQIslQDDQS/UsUMb0MsOXwqOh+TJtRw==",
+      "path": "microsoft.entityframeworkcore/9.0.4",
+      "hashPath": "microsoft.entityframeworkcore.9.0.4.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.Abstractions/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E0pkWzI0liqu2ogqJ1kohk2eGkYRhf5tI75HGF6IQDARsshY/0w+prGyLvNuUeV7B8I7vYQZ4CzAKYKxw7b9gQ==",
+      "path": "microsoft.entityframeworkcore.abstractions/9.0.4",
+      "hashPath": "microsoft.entityframeworkcore.abstractions.9.0.4.nupkg.sha512"
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VHjUwjvN8UKjb8xtKJ/o+dc9tTeHOW3QzlfkzX3JrUspLkPIjwMdZCcw6eS4gsFjby0NFkcXBjHtrgTjVOfO5Q==",
+      "path": "microsoft.entityframeworkcore.inmemory/9.0.4",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.9.0.4.nupkg.sha512"
+    },
+    "Refit/10.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-j82mHFcXJpiJiaLqQgiikmLAu+oYKcIM8ZafipX2s2b2soOS0OGN+Oc+BXkhsG8x6j2M1J23Eac3068yOKLPFA==",
+      "path": "refit/10.1.6",
+      "hashPath": "refit.10.1.6.nupkg.sha512"
+    },
+    "Refit.HttpClientFactory/10.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-brVgMXHX2pp6pMji7tJijygbMwxccIy2vSsPurPmOZ7jSChBjYpiT9bBbJkBDc0hhnNyzvLkkbx0uiHhJuTTEQ==",
+      "path": "refit.httpclientfactory/10.1.6",
+      "hashPath": "refit.httpclientfactory.10.1.6.nupkg.sha512"
+    },
+    "GoodHamburguer.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GoodHamburguer.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GoodHamburguer.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

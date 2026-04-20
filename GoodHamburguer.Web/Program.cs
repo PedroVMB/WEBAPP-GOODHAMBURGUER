@@ -1,8 +1,25 @@
 using GoodHamburguer.Web.Components;
+using GoodHamburguer.Web.Services;
+using Refit;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+var apiBaseUrl = builder.Configuration["ApiBaseUrl"] ?? "http://localhost:5066";
+
+var jsonOptions = new JsonSerializerOptions
+{
+    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+    PropertyNameCaseInsensitive = true
+};
+
+builder.Services.AddRefitClient<IGoodHamburguerApi>(new RefitSettings
+{
+    ContentSerializer = new SystemTextJsonContentSerializer(jsonOptions)
+}).ConfigureHttpClient(client => client.BaseAddress = new Uri(apiBaseUrl));
+
+builder.Services.AddScoped<IOrderApiService, OrderApiService>();
+
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
@@ -12,7 +29,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

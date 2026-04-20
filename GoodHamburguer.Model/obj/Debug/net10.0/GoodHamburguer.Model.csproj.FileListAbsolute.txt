@@ -1,0 +1,12 @@
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Model/bin/Debug/net10.0/GoodHamburguer.Model.deps.json
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Model/bin/Debug/net10.0/GoodHamburguer.Model.dll
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Model/bin/Debug/net10.0/GoodHamburguer.Model.pdb
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Model/obj/Debug/net10.0/GoodHamburguer.Model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Model/obj/Debug/net10.0/GoodHamburguer.Model.AssemblyInfoInputs.cache
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Model/obj/Debug/net10.0/GoodHamburguer.Model.AssemblyInfo.cs
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Model/obj/Debug/net10.0/GoodHamburguer.Model.csproj.CoreCompileInputs.cache
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Model/obj/Debug/net10.0/GoodHamburguer.Model.sourcelink.json
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Model/obj/Debug/net10.0/GoodHamburguer.Model.dll
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Model/obj/Debug/net10.0/refint/GoodHamburguer.Model.dll
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Model/obj/Debug/net10.0/GoodHamburguer.Model.pdb
+/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Model/obj/Debug/net10.0/ref/GoodHamburguer.Model.dll

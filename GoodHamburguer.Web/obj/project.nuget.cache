@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "mK0CwTnkkCc=",
+  "dgSpecHash": "r1T3F5jdTyU=",
   "success": true,
   "projectFilePath": "/Users/pedro/dev/trabalhos/STgenetics/GoodHamburguer/GoodHamburguer.Web/GoodHamburguer.Web.csproj",
   "expectedPackageFiles": [
-    "/Users/pedro/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.5/microsoft.aspnetcore.app.internal.assets.10.0.5.nupkg.sha512"
+    "/Users/pedro/.nuget/packages/microsoft.aspnetcore.app.internal.assets/10.0.5/microsoft.aspnetcore.app.internal.assets.10.0.5.nupkg.sha512",
+    "/Users/pedro/.nuget/packages/microsoft.entityframeworkcore/9.0.4/microsoft.entityframeworkcore.9.0.4.nupkg.sha512",
+    "/Users/pedro/.nuget/packages/microsoft.entityframeworkcore.abstractions/9.0.4/microsoft.entityframeworkcore.abstractions.9.0.4.nupkg.sha512",
+    "/Users/pedro/.nuget/packages/microsoft.entityframeworkcore.analyzers/9.0.4/microsoft.entityframeworkcore.analyzers.9.0.4.nupkg.sha512",
+    "/Users/pedro/.nuget/packages/microsoft.entityframeworkcore.inmemory/9.0.4/microsoft.entityframeworkcore.inmemory.9.0.4.nupkg.sha512",
+    "/Users/pedro/.nuget/packages/refit/10.1.6/refit.10.1.6.nupkg.sha512",
+    "/Users/pedro/.nuget/packages/refit.httpclientfactory/10.1.6/refit.httpclientfactory.10.1.6.nupkg.sha512"
   ],
   "logs": []
 }

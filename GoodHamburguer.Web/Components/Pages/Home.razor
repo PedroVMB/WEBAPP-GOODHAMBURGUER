@@ -1,7 +1,29 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Good Hamburger</PageTitle>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
+<div class="text-center py-5">
+    <h1 class="display-4">🍔 Good Hamburger</h1>
+    <p class="lead text-muted">Sistema de pedidos da lanchonete</p>
+    <hr class="my-4" />
+    <div class="row justify-content-center g-4 mt-2">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">🗒️ Cardápio</h5>
+                    <p class="card-text text-muted">Consulte todos os lanches e acompanhamentos disponíveis com seus preços e regras de desconto.</p>
+                    <a href="/menu" class="btn btn-outline-primary">Ver cardápio</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">📋 Pedidos</h5>
+                    <p class="card-text text-muted">Crie, edite e remova pedidos. O desconto é calculado automaticamente conforme os itens selecionados.</p>
+                    <a href="/orders" class="btn btn-outline-success">Ver pedidos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
